@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>isw-color-input demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../isw-color-input.html">
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic isw-color-input demo</h3>
+      <demo-snippet>
+        <template>
+          <isw-color-input></isw-color-input>
+        </template>
+      </demo-snippet>
+
+      <h3>Custom colors</h3>
+      <p>Example square from the MD color video.</p>
+      <demo-snippet>
+        <template>
+          <isw-color-input column-count="4" color-list='["#FFEB3B","#009688","#3F51B5","#F44336","#FFC107","#4CAF50","#2196F3","#E91E63","#FF9800","#8BC34A","#03A9F4","#9C27B0","#FF5722","#CDDC39","#00BCD4","#673AB7"]'></isw-color-input>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>
