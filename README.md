@@ -8,3 +8,5 @@ Usage and API is nearly identical to paper-swatch-picker.
 ```html
 <isw-color-input label="Color" color="{{selectedColor}}"></isw-color-input>
 ```
+
+Make sure to install and import "web-animations/web-animations-js", since paper-menu-button does not import it anymore in 2.0!
