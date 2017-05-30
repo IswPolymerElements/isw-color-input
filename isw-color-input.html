@@ -27,7 +27,7 @@
 				horizontal-align="[[horizontalAlign]]"
 				horizontal-offset="[[horizontalOffset]]">
 
-			<paper-input value="[[color]]" readonly slot="dropdown-trigger">
+			<paper-input label="[[label]]" value="[[color]]" readonly slot="dropdown-trigger">
 				<iron-icon icon="image:palette" slot="suffix"></iron-icon>
 			</paper-input>
 
@@ -47,7 +47,7 @@
 		 * Basically an paper-swatch-picker combined with an paper-input.
 		 * Usage and API is nearly identical to paper-swatch-picker.
 		 *
-		 *     <isw-color-input color="{{selectedColor}}"></isw-color-input>
+		 *     <isw-color-input label="Color" color="{{selectedColor}}"></isw-color-input>
 		 *
 		 * @customElement
 		 * @polymer
@@ -60,6 +60,13 @@
 
 			static get properties() {
 				return {
+					/**
+					 * See paper-input.
+					 */
+					label: {
+						type: String
+					},
+
 					/**
 					 * The selected color, as hex (i.e. #ffffff).
 					 * value.

@@ -6,5 +6,5 @@ Basically an paper-swatch-picker combined with an paper-input.
 Usage and API is nearly identical to paper-swatch-picker.
 
 ```html
-<isw-color-input color="{{selectedColor}}"></isw-color-input>
+<isw-color-input label="Color" color="{{selectedColor}}"></isw-color-input>
 ```
