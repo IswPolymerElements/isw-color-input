@@ -9,4 +9,6 @@ Usage and API is nearly identical to paper-swatch-picker.
 <isw-color-input label="Color" color="{{selectedColor}}"></isw-color-input>
 ```
 
+The default color set are the 16 MD main colors (500), For an example of an full set like paper-swatch-picker see demo!
+
 Make sure to install and import "web-animations/web-animations-js", since paper-menu-button does not import it anymore in 2.0!
