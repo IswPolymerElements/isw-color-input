@@ -41,7 +41,8 @@
 				vertical-align="[[verticalAlign]]"
 				vertical-offset="[[verticalOffset]]"
 				horizontal-align="[[horizontalAlign]]"
-				horizontal-offset="[[horizontalOffset]]">
+				horizontal-offset="[[horizontalOffset]]"
+				disabled="[[readonly]]">
 
 			<paper-input label="[[label]]" value="[[_computeInputValue(color)]]" readonly slot="dropdown-trigger">
 				<iron-icon icon="image:palette" slot="suffix"></iron-icon>
@@ -95,6 +96,14 @@
 						type: String,
 						notify: true,
 						observer: '_colorChanged'
+					},
+
+					/**
+					 * No overlay.
+					 */
+					readonly: {
+						type: Boolean,
+						value: false
 					},
 
 					/**
